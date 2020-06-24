@@ -1,11 +1,5 @@
 trigger:
-- task: AzureCLI@2
-  inputs:
-    azureSubscription: 'Resource Manager - Tailspin - Space Game'
-    scriptType: 'bash'
-    scriptLocation: 'inlineScript'
-    inlineScript: 'az configure --defaults location=eastus2'
-
+- '*'
 variables:
   buildConfiguration: 'Release'
 
